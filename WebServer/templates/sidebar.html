@@ -1,0 +1,67 @@
+{{define "sidebar"}}
+<div class="sidebar" data-color="blue">
+    <div class="logo">
+        <a class="simple-text logo-mini">TP</a>
+        <a class="simple-text logo-normal">{{.Name}}</a>
+    </div>
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+            {{if eq .Page "home"}}
+                <li class="active ">
+            {{else}}
+                <li>
+            {{end}}
+                <a href="/">
+                    <i class="now-ui-icons design_app"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            {{if eq .Page "notifications"}}
+                <li class="active ">
+            {{else}}
+                <li>
+            {{end}}
+                <a href="/notifications">
+                    <i class="now-ui-icons ui-1_bell-53"></i>
+                    <p>Notifications</p>
+                </a>
+            </li>
+            {{if eq .Page "tables"}}
+                <li class="active ">
+            {{else}}
+                <li>
+            {{end}}
+                <a href="/tables">
+                    <i class="now-ui-icons design_bullet-list-67"></i>
+                    <p>Table List</p>
+                </a>
+            </li>
+            {{if eq .Page "typography"}}
+                <li class="active ">
+            {{else}}
+                <li>
+            {{end}}
+                <a href="/typography">
+                    <i class="now-ui-icons text_caps-small"></i>
+                    <p>Typography</p>
+                </a>
+            </li>
+            {{if eq .Page "home"}}
+                <div class="logo"></div>
+                <li>
+                    <a onclick="StartEventStream()">
+                        <i class="now-ui-icons media-1_button-play"></i>
+                        <p>Start Event Stream</p>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="StopEventStream()">
+                        <i class="now-ui-icons media-1_button-pause"></i>
+                        <p>Stop Event Stream</p>
+                    </a>
+                </li>
+            {{end}}
+        </ul>
+    </div>
+</div>
+{{end}}
