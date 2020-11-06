@@ -2,7 +2,8 @@
 A template of communication between API and Web server in GoLang.
 
 ## Windows
-You'll need GoLang, to install it for linux follow the article here.
+You'll need GoLang, to install it for linux follow the article here:
+
 https://golang.org/doc/install
 
 > :warning: **Assuming you're in the root folder of the repository.**
@@ -19,7 +20,8 @@ go build main.go -o WebServer
 ```
 
 ## Linux
-As per windows you will need GoLang, to install it follow the guide here and select the Linux variation.
+As per windows you will need GoLang, to install it follow the guide here and select the Linux variation:
+
 https://golang.org/doc/install
 
 > :warning: **Assuming you're in the root folder of the repository.**
