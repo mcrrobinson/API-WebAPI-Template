@@ -5,7 +5,7 @@ A template of communication between API and Web server in GoLang.
 You'll need GoLang, to install it for linux follow the article here.
 https://golang.org/doc/install
 
-> :warning: **ssuming you're in the root folder of the repository.**
+> :warning: **Assuming you're in the root folder of the repository.**
 ```
 cd WorkerService
 go build main.go -o WorkerService
