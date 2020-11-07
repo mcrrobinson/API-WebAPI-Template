@@ -1,0 +1,7 @@
+language: go
+go: 
+  - "1.10.x"
+install: true
+script: 
+  - cd WorkerService && go build main.go -o WorkerService && WorkerService.exe
+  - cd WebServer && go build main.go -o WebServer && WebServer.exe
